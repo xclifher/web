@@ -1,0 +1,23 @@
+h2{
+    background-color: brown;
+    color: cornsilk;
+    text-decoration: darkmagenta;
+}
+p{
+    background-color: darkorange;
+    text-decoration: darksalmon;
+    text-shadow: deeppink;
+   color:yellowgreen;
+}
+h1{
+    color: orangered;
+}
+
+.div-tag{
+    height: 12rem;
+    width: 12rem;
+    background-color: red;
+    position: fixed;
+    top: 12rem;
+    left: 12rem;
+}
