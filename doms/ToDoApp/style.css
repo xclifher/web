@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:mediumslateblue;
+}
+input{
+    width: 350px;
+    height: 50px;
+    font-size: larger;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    font-family:serif;
+    color: indianred;
+    background-color: darksalmon;
+}
+li
+{
+    color: mediumspringgreen;
+    font-size: xx-large;
+}

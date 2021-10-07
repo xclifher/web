@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="sajjan">
+    <button id="inc">+</button>
+
+    <p>0 </p>
+
+    <button id="dec">-</button>
+</div>
+    <script>
+        let h1tag=document.querySelector("#inc")
+        let h2tag=document.querySelector("#dec")
+        let par=document.querySelector("p")
+        h1tag.addEventListener("click",function()
+        {
+            let oldv=Number(par.innerText);
+            let newv=oldv+1;
+            par.innerText=newv;
+       
+        
+
+
+        })
+        h2tag.addEventListener("click",function()
+        {
+            let oldv=Number(par.innerText)
+            let newv=oldv-1
+            par.innerText=newv
+
+
+        })
+    </script>
+    
+</body>
+</html>
