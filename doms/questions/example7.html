@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: midnightblue;
+            height: 25rem;
+            width: 25rem;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        .box2{
+            background-color: orangered;
+            height: 15rem;
+            width: 15rem;
+            margin: auto;
+        }
+        .box3{
+            background-color: brown;
+            height: 7rem;
+            width: 7rem;
+            margin: auto;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <div class="box3"></div>
+        </div>
+
+    </div>
+    <script>
+        let larger=document.querySelector(".box1")
+        let smaller=document.querySelector(".box2")
+        let small=document.querySelector(".box3")
+        larger.addEventListener("click",function(){
+            alert("blue was click")
+
+        })
+        smaller.addEventListener("click",function(e)
+        {
+           e.stopPropagation()
+            alert("orange was click")
+        })
+        small.addEventListener("click",function(e)
+        {
+            
+            alert("yellow was click")
+            e.stopPropagation()
+           
+        })
+    </script>
+</body>
+</html>

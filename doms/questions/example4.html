@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .boxes{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 1rem;
+
+        }
+        .box{
+            background-color:crimson;
+            /* border-radius: 0%; */
+            height: 10rem;
+            width: 10rem;
+            margin:2rem;
+            margin-top: 4rem;
+
+        }
+        h3{
+            background-color:darkred;
+            margin-top: 0%;
+            font-family: 'Courier New', Courier, monospace;
+            color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+        .menu{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>BOOOK MY SHOW</h1>
+    <div class="menu">
+    <label for="Movie-Type">Choose a movie type:</label>
+    <select name="Movie-Type" id="Movie-Type">
+
+<option value="None">None</option>        
+<option value="Romantic">Romantic</option>
+<option value="Action">Action</option>
+<option value="Drama">Drama</option>
+<option value="Thriller">Thriller</option>
+    </select>
+    </div>
+    <div class="boxes">
+        <div class="box">
+            <h3>Example-1</h3>
+            <h2 data-category="Action">Rs. 100</h2>
+
+        </div>
+        <div class="box">
+            <h3>Example-2</h3>
+            <h2 data-category="Drama">Rs. 200</h2>
+
+        </div>
+        <div class="box">
+            <h3>Example-3</h3>
+            <h2 data-category="Thriller">Rs. 150</h2>
+
+        </div>
+        <div class="box">
+            <h3>Example-4</h3>
+            <h2 data-category="Romantic">Rs. 200</h2>
+
+        </div>
+        <div class="box">
+            <h3>Example-5</h3>
+            <h2 data-category="Romantic">Rs. 150</h2>
+
+        </div>
+        <div class="box">
+            <h3>Example-6</h3>
+            <h2 data-category="Romantic">Rs. 150</h2>
+
+        </div>
+        <div class="box">
+            <h3>Example-7</h3>
+            <h2 data-category="Drama">Rs. 200</h2>
+
+        </div>
+        <div class="box">
+            <h3>Example-8</h3>
+            <h2 data-category="Action">Rs. 100</h2>
+           
+
+        </div>
+        <div class="box">
+            <h3>Example-9</h3>
+            <h2 data-category="Action">Rs. 100</h2>
+
+        </div>
+        <div class="box">
+            <h3>Example-10</h3>
+            <h2 data-category="Drama">Rs. 300</h2>
+
+        </div>
+     
+    </div>
+    <script>
+        let selecttag=document.querySelector("select")
+        let box=document.querySelectorAll(".box")
+        selecttag.addEventListener("change",function()
+        {
+            for(let i=0;i<box.length;i++)
+            {
+                let boxtag=box[i];
+                let movie=boxtag.querySelector("h2")
+                let category=movie.getAttribute("data-category")
+                if(selecttag.value!=category && selecttag.value!="None")
+                {
+                    boxtag.style.display="none";
+                }
+                else
+                {
+                    boxtag.style.display="block"
+                }
+            }
+           
+        })
+
+    </script>
+</body>
+</html>

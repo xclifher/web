@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        p{
+            display: flex;
+            flex-wrap:wrap ;
+        }
+    </style> -->
+</head>
+
+<body>
+    <p>
+        <p class="par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et iste corrupti odio asperiores distinctio natus sapiente consequatur perferendis amet perspiciatis cumque officiis enim minus iure fugit quod animi, nulla earum?</p>
+        <p class="par">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus exercitationem ea quibusdam vel, omnis, illum voluptatum dolorum repellat aliquam eaque provident voluptatem error possimus sunt. Adipisci ex voluptas, quisquam dolore exercitationem, rerum accusantium impedit iste porro aliquid dolorem consectetur mollitia dolor blanditiis illum esse, praesentium aut! Unde sed aliquid explicabo?</p>
+        <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, omnis!</p>
+    </p>
+    <script>
+     let para=document.querySelectorAll("p")
+     for(let i=0;i<para.length;i++)
+     {
+     para[i].addEventListener("click",function(q)
+     {
+         if(q.detail===3)
+         {
+        para[i].style.backgroundColor="";
+        //alert("you are not on safe")
+//alert("click 3 times")
+         }
+         else if(q.detail===2)
+         {
+        para[i].style.backgroundColor="green";
+       // alert("click 2 times")
+         }
+         else if(q.detail===1)
+         {
+        para[i].style.backgroundColor="purple";
+        //alert("you are not on safe")
+       // alert("click 1 times")
+         }
+     })
+    
+    }
+
+
+    
+        
+    </script>
+    
+</body>
+
+</html>
